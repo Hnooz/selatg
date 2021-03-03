@@ -1,44 +1,43 @@
 @extends('layouts.auth')
 
 @section('content')
-    <div class="min-h-screen flex items-center">
-        <div class="bg-white w-full max-w-lg rounded-lg shadow overflow-hidden mx-auto">
-            <div class="py-4 px-6">
-                <div class="text-center font-bold text-gray-700 text-3xl">Brand</div>
-                <div class="mt-1 text-center font-bold text-gray-600 text-xl">Welcome Back</div>
-                <div class="mt-1 text-center text-gray-600">Login or Register</div>
+    <div class="flex items-center min-h-screen">
+        <div class="w-full max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow">
+            <div class="px-6 py-4">
+                <div class="flex justify-center text-3xl font-bold text-gray-700">
+                    <h1 class="flex items-center">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        سلعتك
+                    </h1>
+                </div>
+                <div class="mt-1 text-xl font-bold text-center text-gray-600">مرحبا بعودتك</div>
                 <form action="{{ route('login') }}" method="POST">
                     @csrf
-                    <div class="mt-4 w-full">
-                        <input type="email" name="email" placeholder="Email address"
-                               class="w-full mt-2 py-3 px-4 bg-gray-100 text-gray-700 border border-gray-300 rounded  block appearance-none placeholder-gray-500 focus:outline-none focus:bg-white"/>
+                    <div class="w-full mt-4">
+                        <input type="email" name="email" placeholder="البريد الالكتروني"
+                               class="block w-full px-4 py-3 mt-2 text-gray-700 placeholder-gray-500 bg-gray-100 border border-gray-300 rounded appearance-none focus:outline-none focus:bg-white"/>
                         @error('email')
-                        <p class="text-red-500 text-xs mt-4">
+                        <p class="mt-4 text-xs text-red-500">
                             {{ $message }}
                         </p>
                         @enderror
                     </div>
-                    <div class="mt-4 w-full">
-                        <input type="password" name="password" placeholder="Password"
-                               class="w-full mt-2 py-3 px-4 bg-gray-100 text-gray-700 border border-gray-300 rounded  block appearance-none placeholder-gray-500 focus:outline-none focus:bg-white"/>
+                    <div class="w-full mt-4">
+                        <input type="password" name="password" placeholder="كلمه السر"
+                               class="block w-full px-4 py-3 mt-2 text-gray-700 placeholder-gray-500 bg-gray-100 border border-gray-300 rounded appearance-none focus:outline-none focus:bg-white"/>
                         @error('password')
-                        <p class="text-red-500 text-xs italic mt-4">
+                        <p class="mt-4 text-xs italic text-red-500">
                             {{ $message }}
                         </p>
                         @enderror
                     </div>
-                    <div class="flex justify-between items-center mt-6">
-                        <a href="#" class="text-gray-600 text-sm hover:text-gray-500">Forget password?</a>
+                    <div class="flex items-center justify-between mt-6">
                         <button type="submit"
-                                class="py-2 px-4 bg-gray-700 text-white rounded hover:bg-gray-600 focus:outline-none">
-                            Login
+                                class="px-4 py-2 text-white bg-gray-700 rounded hover:bg-gray-600 focus:outline-none">
+                            تسجيل دخول
                         </button>
                     </div>
                 </form>
-            </div>
-            <div class="flex items-center justify-center py-4 bg-gray-100 text-center">
-                <h1 class="text-gray-600 text-sm">Don't have an account</h1>
-                <a href="/register" class="text-blue-600 font-bold mx-2 text-sm hover:text-blue-500">Register now</a>
             </div>
         </div>
     </div>

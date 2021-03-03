@@ -3,7 +3,7 @@ module.exports = {
     theme: {
         fontFamily: {
             'base': 'Inter',
-            // 'base-ar': 'Tajawal' // I love this font for arabic
+            'base-ar': 'Tajawal' // I love this font for arabic
         },
         extend: {},
     },

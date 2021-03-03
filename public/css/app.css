@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap);/* You can use this font for arabic sites */
-
-/*@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');*/
+@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap);/* You can use this font for arabic sites */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -6302,6 +6300,10 @@ video {
 
 .font-base{
   font-family: Inter;
+}
+
+.font-base-ar{
+  font-family: Tajawal;
 }
 
 .font-hairline{
@@ -23554,6 +23556,10 @@ video {
 
   .sm\:font-base{
     font-family: Inter;
+  }
+
+  .sm\:font-base-ar{
+    font-family: Tajawal;
   }
 
   .sm\:font-hairline{
@@ -40809,6 +40815,10 @@ video {
     font-family: Inter;
   }
 
+  .md\:font-base-ar{
+    font-family: Tajawal;
+  }
+
   .md\:font-hairline{
     font-weight: 100;
   }
@@ -58062,6 +58072,10 @@ video {
     font-family: Inter;
   }
 
+  .lg\:font-base-ar{
+    font-family: Tajawal;
+  }
+
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -75313,6 +75327,10 @@ video {
 
   .xl\:font-base{
     font-family: Inter;
+  }
+
+  .xl\:font-base-ar{
+    font-family: Tajawal;
   }
 
   .xl\:font-hairline{

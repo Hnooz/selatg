@@ -1,24 +1,24 @@
 <template>
     <layout>
-        <div class="mx-auto w-full">
+        <div class="w-full mx-auto">
             <div>
                 <!-- Card stats -->
                 <div class="flex flex-wrap -mx-4">
-                    <div class="w-full md:w-1/3 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                    <div class="w-full px-4 md:w-1/3">
+                        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white rounded shadow-lg xl:mb-0">
                             <div class="flex-auto p-4">
                                 <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-gray-500 uppercase font-bold text-xs">
-                                            New users
+                                    <div class="relative flex-1 flex-grow w-full max-w-full pr-4">
+                                        <h5 class="text-xs font-bold text-gray-500 uppercase">
+                                            المستخدمين
                                         </h5>
-                                        <span class="font-semibold text-xl text-gray-800">
-                          2,356
-                        </span>
+                                        <span class="text-xl font-semibold text-gray-800">
+                                          {{userCount}}
+                                        </span>
                                     </div>
-                                    <div class="relative w-auto px-2 flex-initial">
+                                    <div class="relative flex-initial w-auto px-2">
                                         <div
-                                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-orange-500">
+                                            class="inline-flex items-center justify-center w-12 h-12 p-3 text-center text-white bg-orange-500 rounded-full shadow-lg">
                                             <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round"
                                                  stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -27,32 +27,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-500 mt-4">
-                      <span class="text-red-500 mr-2">
-                        <i class="fas fa-arrow-down"></i> 3.48%
-                      </span>
-                                    <span class="whitespace-no-wrap">
-                        Since last week
-                      </span>
-                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/3 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                    <div class="w-full px-4 md:w-1/3">
+                        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white rounded shadow-lg xl:mb-0">
                             <div class="flex-auto p-4">
                                 <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-gray-500 uppercase font-bold text-xs">
-                                            Sales
+                                    <div class="relative flex-1 flex-grow w-full max-w-full pr-4">
+                                        <h5 class="text-xs font-bold text-gray-500 uppercase">
+                                            المنتجات
                                         </h5>
-                                        <span class="font-semibold text-xl text-gray-800">
-                          924
-                        </span>
+                                        <span class="text-xl font-semibold text-gray-800">
+                                            {{productCount}}
+                                        </span>
                                     </div>
-                                    <div class="relative w-auto px-2 flex-initial">
+                                    <div class="relative flex-initial w-auto px-2">
                                         <div
-                                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-pink-500">
+                                            class="inline-flex items-center justify-center w-12 h-12 p-3 text-center text-white bg-pink-500 rounded-full shadow-lg">
                                             <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round"
                                                  stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -61,32 +53,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-500 mt-4">
-                      <span class="text-orange-500 mr-2">
-                        <i class="fas fa-arrow-down"></i> 1.10%
-                      </span>
-                                    <span class="whitespace-no-wrap">
-                        Since yesterday
-                      </span>
-                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/3 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                    <div class="w-full px-4 md:w-1/3">
+                        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white rounded shadow-lg xl:mb-0">
                             <div class="flex-auto p-4">
                                 <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-gray-500 uppercase font-bold text-xs">
-                                            Performance
+                                    <div class="relative flex-1 flex-grow w-full max-w-full pr-4">
+                                        <h5 class="text-xs font-bold text-gray-500 uppercase">
+                                            الشكاوي
                                         </h5>
-                                        <span class="font-semibold text-xl text-gray-800">
-                          49,65%
-                        </span>
+                                        <span class="text-xl font-semibold text-gray-800">
+                                            {{reportsCount}}
+                                        </span>
                                     </div>
-                                    <div class="relative w-auto px-2 flex-initial">
+                                    <div class="relative flex-initial w-auto px-2">
                                         <div
-                                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-blue-500">
+                                            class="inline-flex items-center justify-center w-12 h-12 p-3 text-center text-white bg-blue-500 rounded-full shadow-lg">
                                             <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round"
                                                  stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -95,14 +79,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-500 mt-4">
-                      <span class="text-green-500 mr-2">
-                        <i class="fas fa-arrow-up"></i> 12%
-                      </span>
-                                    <span class="whitespace-no-wrap">
-                        Since last month
-                      </span>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -111,93 +87,46 @@
         </div>
 
         <div class="mt-12">
-            <h2 class="text-2xl font-medium">Tables</h2>
+            <h2 class="text-2xl font-medium text-gray-700">اخر {{reports.length}} شكاوي</h2>
             <div class="mt-4">
                 <div class="flex flex-col">
-                    <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6">
+                    <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6">
                         <div
-                            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                            class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
                             <table class="min-w-full">
                                 <thead class="bg-gray-100">
                                 <tr>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                                    <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-right text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Name
+                                        الولايه
                                     </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                                    <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Title
+                                        المحليه
                                     </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                                    <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Status
+                                        القطاع
                                     </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                                    <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Role
+                                        الشكوه
                                     </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
                                 </tr>
                                 </thead>
-                                <tbody class="bg-white">
-                                <tr>
+                                <tbody class="text-gray-700 bg-white">
+                                <tr v-for="report in reports" :key="report.index">
                                     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <img class="h-10 w-10 rounded-full"
-                                                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                     alt=""/>
-                                            </div>
-                                            <div class="mx-2">
-                                                <div class="text-sm leading-5 font-medium text-gray-900">Jone Doe</div>
-                                                <div class="text-sm leading-5 text-gray-500">bernardlane@example.com</div>
-                                            </div>
-                                        </div>
+                                        {{report.state}}
                                     </td>
                                     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        Software Engineer
+                                        {{report.region}}
                                     </td>
                                     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                  <span
-                                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                    Active
-                                  </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-                                        Owner
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 font-medium">
-                                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        <div class="flex items-center">
-                                            <div class="flex-shrink-0 h-10 w-10">
-                                                <img class="h-10 w-10 rounded-full"
-                                                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                     alt=""/>
-                                            </div>
-                                            <div class="mx-2">
-                                                <div class="text-sm leading-5 font-medium text-gray-900">Jone Doe</div>
-                                                <div class="text-sm leading-5 text-gray-500">bernardlane@example.com</div>
-                                            </div>
-                                        </div>
+                                        {{report.section}}
                                     </td>
                                     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                        Actor
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                  <span
-                                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                    Active
-                                  </span>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-                                        Owner
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 font-medium">
-                                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                                        <button @click="showModal(report)">اضغط هنا لاظهار الشكوة</button>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -209,7 +138,25 @@
         </div>
 
 
-
+    <div v-if="toggleModal" class="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
+        <div class="relative w-auto max-w-6xl mx-auto my-6">        
+          <div class="relative flex flex-col w-full outline-none focus:outline-none">               
+            <main class="">
+                <div class="max-w-3xl px-6 py-8 text-xl bg-white shadow-lg">
+                    <div class="absolute top-0 right-0 -mx-1 -mt-1">
+                        <button class="text-gray-100 bg-gray-700 border-2 border-white rounded-full outline-none focus:outline-none" @click="toggleModal = !toggleModal">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                    </div>                        
+                    <div class="text-gray-700">           
+                        <p>{{body}} </p>              
+                    </div>
+                </div>
+            </main>                   
+          </div>
+        </div>
+    </div>
+    <div v-if="toggleModal" class="fixed inset-0 z-40 bg-black opacity-25"></div>
 
     </layout>
 </template>
@@ -218,6 +165,18 @@
     import Layout from "../../Shared/Layout";
 
     export default {
-        components: {Layout}
+        components: {Layout},
+        props:['userCount', 'productCount', 'reportsCount', 'reports'],
+        data() {
+            return {
+                toggleModal:false,
+                body:'',            }
+        },
+        methods: {
+            showModal(report){
+                this.toggleModal = true;
+                this.body = report.body
+            },
+        },
     }
 </script>
