@@ -2,10 +2,60 @@
     <layout>
 
         <div class="mt-8">
-            <div class="flex justify-between">
+            <div class="flex">
                 <h2 class="text-3xl font-bold text-gray-700">الشكاوي</h2>
+                 <div class="flex items-center text-xs text-gray-500 capitalize whitespace-no-wrap md:mx-10 md:text-base">
+                        <div class="flex items-center mx-8">
+                            <label for="">
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button @click="isOpen = !isOpen" type="button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 capitalize bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                                        الولايات
+                                        <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                    <div v-if="isOpen" :class="isOpen ? 'transition ease-out duration-100':'transition ease-in duration-75'" class="absolute right-0 w-32 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                            <a  href="/dashboard/reports?state=الخرطوم" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">الخرطوم</a>
+                                            <a href="/dashboard/reports?state=امدرمان" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">امدرمان</a>
+                                            <a href="/dashboard/reports?state=بحري" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">بحري</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                         <div class="flex items-center mx-8">
+                            <label for="">
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                        <button @click="isOpenRegion = !isOpenRegion" type="button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 capitalize bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                                        المحليات
+                                        <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                    <div v-if="isOpenRegion" :class="isOpenRegion ? 'transition ease-out duration-100':'transition ease-in duration-75'" class="absolute right-0 w-32 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                            <a  href="/dashboard/reports?region=كرري" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">كرري</a>
+                                            <a href="/dashboard/reports?region=بحري" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">بحري</a>
+                                            <a href="/dashboard/reports?region=شرق النيل" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">شرق النيل</a>
+                                            <a href="/dashboard/reports?region=الجبل" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">الجبل</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                </div>
+            </div>
+            <div class="items-center md:flex">                  
+               
             </div>
             <div class="mt-4">
+                
                 <div class="flex flex-col">
                     <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6">
                         <div
@@ -84,6 +134,8 @@
         data() {
             return {
                 toggleModal:false,
+                isOpen:false,
+                isOpenRegion:false,
                 body:''
             }
         },

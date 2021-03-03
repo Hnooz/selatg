@@ -2667,6 +2667,56 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2676,6 +2726,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       toggleModal: false,
+      isOpen: false,
+      isOpenRegion: false,
       body: ''
     };
   },
@@ -6735,11 +6787,275 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("layout", [
     _c("div", { staticClass: "mt-8" }, [
-      _c("div", { staticClass: "flex justify-between" }, [
+      _c("div", { staticClass: "flex" }, [
         _c("h2", { staticClass: "text-3xl font-bold text-gray-700" }, [
           _vm._v("الشكاوي")
-        ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex items-center text-xs text-gray-500 capitalize whitespace-no-wrap md:mx-10 md:text-base"
+          },
+          [
+            _c("div", { staticClass: "flex items-center mx-8" }, [
+              _c("label", { attrs: { for: "" } }, [
+                _c("div", { staticClass: "relative inline-block text-left" }, [
+                  _c("div", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 capitalize bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none",
+                        attrs: {
+                          type: "button",
+                          id: "options-menu",
+                          "aria-haspopup": "true",
+                          "aria-expanded": "true"
+                        },
+                        on: {
+                          click: function($event) {
+                            _vm.isOpen = !_vm.isOpen
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                    الولايات\n                                    "
+                        ),
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "w-5 h-5 ml-2 -mr-1",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              viewBox: "0 0 20 20",
+                              fill: "currentColor",
+                              "aria-hidden": "true"
+                            }
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "fill-rule": "evenodd",
+                                d:
+                                  "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
+                                "clip-rule": "evenodd"
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm.isOpen
+                    ? _c(
+                        "div",
+                        {
+                          staticClass:
+                            "absolute right-0 w-32 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5",
+                          class: _vm.isOpen
+                            ? "transition ease-out duration-100"
+                            : "transition ease-in duration-75"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "py-1",
+                              attrs: {
+                                role: "menu",
+                                "aria-orientation": "vertical",
+                                "aria-labelledby": "options-menu"
+                              }
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+                                  attrs: {
+                                    href: "/dashboard/reports?state=الخرطوم",
+                                    role: "menuitem"
+                                  }
+                                },
+                                [_vm._v("الخرطوم")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+                                  attrs: {
+                                    href: "/dashboard/reports?state=امدرمان",
+                                    role: "menuitem"
+                                  }
+                                },
+                                [_vm._v("امدرمان")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+                                  attrs: {
+                                    href: "/dashboard/reports?state=بحري",
+                                    role: "menuitem"
+                                  }
+                                },
+                                [_vm._v("بحري")]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    : _vm._e()
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex items-center mx-8" }, [
+              _c("label", { attrs: { for: "" } }, [
+                _c("div", { staticClass: "relative inline-block text-left" }, [
+                  _c("div", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 capitalize bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none",
+                        attrs: {
+                          type: "button",
+                          id: "options-menu",
+                          "aria-haspopup": "true",
+                          "aria-expanded": "true"
+                        },
+                        on: {
+                          click: function($event) {
+                            _vm.isOpenRegion = !_vm.isOpenRegion
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                    المحليات\n                                    "
+                        ),
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "w-5 h-5 ml-2 -mr-1",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              viewBox: "0 0 20 20",
+                              fill: "currentColor",
+                              "aria-hidden": "true"
+                            }
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "fill-rule": "evenodd",
+                                d:
+                                  "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
+                                "clip-rule": "evenodd"
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm.isOpenRegion
+                    ? _c(
+                        "div",
+                        {
+                          staticClass:
+                            "absolute right-0 w-32 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5",
+                          class: _vm.isOpenRegion
+                            ? "transition ease-out duration-100"
+                            : "transition ease-in duration-75"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "py-1",
+                              attrs: {
+                                role: "menu",
+                                "aria-orientation": "vertical",
+                                "aria-labelledby": "options-menu"
+                              }
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+                                  attrs: {
+                                    href: "/dashboard/reports?region=كرري",
+                                    role: "menuitem"
+                                  }
+                                },
+                                [_vm._v("كرري")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+                                  attrs: {
+                                    href: "/dashboard/reports?region=بحري",
+                                    role: "menuitem"
+                                  }
+                                },
+                                [_vm._v("بحري")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+                                  attrs: {
+                                    href: "/dashboard/reports?region=شرق النيل",
+                                    role: "menuitem"
+                                  }
+                                },
+                                [_vm._v("شرق النيل")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+                                  attrs: {
+                                    href: "/dashboard/reports?region=الجبل",
+                                    role: "menuitem"
+                                  }
+                                },
+                                [_vm._v("الجبل")]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    : _vm._e()
+                ])
+              ])
+            ])
+          ]
+        )
       ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "items-center md:flex" }),
       _vm._v(" "),
       _c("div", { staticClass: "mt-4" }, [
         _c("div", { staticClass: "flex flex-col" }, [
