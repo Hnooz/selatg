@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-col md:flex-row relative overflow-hidden">
+    <div class="relative flex flex-col overflow-hidden md:flex-row" dir="rtl">
 
         <base-sidebar></base-sidebar>
 
         <div class="w-full md:flex-1">
-            <nav class="hidden md:flex justify-between items-center bg-white p-4 shadow-md h-16">
+            <nav class="items-center justify-between hidden h-16 p-4 bg-white shadow-md md:flex">
                 <div>
                     <input class="px-4 py-2 bg-gray-200 border border-gray-300 rounded focus:outline-none" type="text"
                            placeholder="Search.."/>

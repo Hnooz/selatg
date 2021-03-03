@@ -2649,13 +2649,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   props: ['reports'],
+  data: function data() {
+    return {
+      toggleModal: false,
+      body: ''
+    };
+  },
   methods: {
+    showModal: function showModal(report) {
+      this.toggleModal = true;
+      this.body = report.body;
+    },
     Delete: function Delete(report) {
       this.$inertia["delete"]("/dashboard/reports/".concat(report.id));
     }
@@ -3166,9 +3194,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -6161,8 +6186,8 @@ var render = function() {
       [
         _c("div", { staticClass: "flex" }, [
           _c("h2", { staticClass: "text-3xl font-bold text-indigo-500" }, [
-            _vm._v("Products /"),
-            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" Create")])
+            _vm._v("المنتجات /"),
+            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" اضافه")])
           ])
         ]),
         _vm._v(" "),
@@ -6187,7 +6212,7 @@ var render = function() {
                     [
                       _c("base-input", {
                         attrs: {
-                          label: "Name",
+                          label: "اسم المنتج",
                           name: "name",
                           error: _vm.$page.errors.name,
                           required: ""
@@ -6209,8 +6234,8 @@ var render = function() {
                     [
                       _c("base-input", {
                         attrs: {
+                          label: "السعر",
                           type: "number",
-                          label: "Price",
                           name: "price",
                           error: _vm.$page.errors.price,
                           required: ""
@@ -6232,8 +6257,8 @@ var render = function() {
                     [
                       _c("base-input", {
                         attrs: {
+                          label: "الحجم",
                           type: "text",
-                          label: "Size",
                           name: "size",
                           error: _vm.$page.errors.size,
                           required: ""
@@ -6257,7 +6282,7 @@ var render = function() {
                 { staticClass: "flex justify-end mt-4" },
                 [
                   _c("base-button", { attrs: { primary: "" } }, [
-                    _vm._v("Create product")
+                    _vm._v("اضافه")
                   ])
                 ],
                 1
@@ -6299,8 +6324,8 @@ var render = function() {
       [
         _c("div", { staticClass: "flex" }, [
           _c("h2", { staticClass: "text-3xl font-bold text-indigo-500" }, [
-            _vm._v("Products /"),
-            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" Edit")])
+            _vm._v("المنتجات /"),
+            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" تعديل")])
           ])
         ]),
         _vm._v(" "),
@@ -6325,7 +6350,7 @@ var render = function() {
                     [
                       _c("base-input", {
                         attrs: {
-                          label: "Name",
+                          label: "اسم المنتج",
                           name: "name",
                           error: _vm.$page.errors.name,
                           required: ""
@@ -6348,7 +6373,7 @@ var render = function() {
                       _c("base-input", {
                         attrs: {
                           type: "number",
-                          label: "Price",
+                          label: "السعر",
                           name: "price",
                           error: _vm.$page.errors.price,
                           required: ""
@@ -6371,7 +6396,7 @@ var render = function() {
                       _c("base-input", {
                         attrs: {
                           type: "text",
-                          label: "Size",
+                          label: "الحجم",
                           name: "size",
                           error: _vm.$page.errors.size,
                           required: ""
@@ -6395,7 +6420,7 @@ var render = function() {
                 { staticClass: "flex justify-end mt-4" },
                 [
                   _c("base-button", { attrs: { primary: "" } }, [
-                    _vm._v("Edit product")
+                    _vm._v("تعديل")
                   ])
                 ],
                 1
@@ -6434,7 +6459,7 @@ var render = function() {
     _c("div", { staticClass: "mt-8" }, [
       _c("div", { staticClass: "flex justify-between" }, [
         _c("h2", { staticClass: "text-3xl font-bold text-gray-700" }, [
-          _vm._v("Products")
+          _vm._v("المنتجات")
         ]),
         _vm._v(" "),
         _c(
@@ -6447,7 +6472,7 @@ var render = function() {
                   "px-4 py-2 font-medium text-white bg-indigo-500 rounded hover:bg-indigo-600",
                 attrs: { href: "/dashboard/products/create" }
               },
-              [_vm._v("\n                    Create product\n                ")]
+              [_vm._v("\n                    اضافه منتج\n                ")]
             )
           ],
           1
@@ -6479,7 +6504,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    Name\n                                "
+                              "\n                                    الاسم\n                                "
                             )
                           ]
                         ),
@@ -6493,7 +6518,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    Price\n                                "
+                              "\n                                    السعر\n                                "
                             )
                           ]
                         ),
@@ -6507,7 +6532,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    Size\n                                "
+                              "\n                                    الحجم\n                                "
                             )
                           ]
                         ),
@@ -6521,7 +6546,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    Action\n                                "
+                              "\n                                    الحدث\n                                "
                             )
                           ]
                         )
@@ -6712,7 +6737,7 @@ var render = function() {
     _c("div", { staticClass: "mt-8" }, [
       _c("div", { staticClass: "flex justify-between" }, [
         _c("h2", { staticClass: "text-3xl font-bold text-gray-700" }, [
-          _vm._v("Reports")
+          _vm._v("الشكاوي")
         ])
       ]),
       _vm._v(" "),
@@ -6741,7 +6766,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    State\n                                "
+                              "\n                                    الولايه\n                                "
                             )
                           ]
                         ),
@@ -6755,7 +6780,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    Region\n                                "
+                              "\n                                    المحليه\n                                "
                             )
                           ]
                         ),
@@ -6769,7 +6794,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    Section\n                                "
+                              "\n                                    القطاع\n                                "
                             )
                           ]
                         ),
@@ -6783,7 +6808,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                    Body\n                                "
+                              "\n                                    الشكوه\n                                "
                             )
                           ]
                         )
@@ -6847,10 +6872,16 @@ var render = function() {
                                 "px-6 py-4 whitespace-no-wrap border-b border-gray-200"
                             },
                             [
-                              _vm._v(
-                                "\n                                    " +
-                                  _vm._s(report.body.slice(0, 20)) +
-                                  "\n                                "
+                              _c(
+                                "button",
+                                {
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.showModal(report)
+                                    }
+                                  }
+                                },
+                                [_vm._v("اضغط هنا لاظهار الشكوة")]
                               )
                             ]
                           )
@@ -6865,7 +6896,98 @@ var render = function() {
           )
         ])
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _vm.toggleModal
+      ? _c(
+          "div",
+          {
+            staticClass:
+              "fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "relative w-auto max-w-6xl mx-auto my-6" },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "relative flex flex-col w-full outline-none focus:outline-none"
+                  },
+                  [
+                    _c("main", {}, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "max-w-3xl px-6 py-8 text-xl bg-white shadow-lg"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "absolute top-0 right-0 -mx-1 -mt-1"
+                            },
+                            [
+                              _c(
+                                "button",
+                                {
+                                  staticClass:
+                                    "text-gray-100 bg-gray-700 border-2 border-white rounded-full outline-none focus:outline-none",
+                                  on: {
+                                    click: function($event) {
+                                      _vm.toggleModal = !_vm.toggleModal
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "svg",
+                                    {
+                                      staticClass: "w-6 h-6",
+                                      attrs: {
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        xmlns: "http://www.w3.org/2000/svg"
+                                      }
+                                    },
+                                    [
+                                      _c("path", {
+                                        attrs: {
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                          "stroke-width": "2",
+                                          d:
+                                            "M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        }
+                                      })
+                                    ]
+                                  )
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "text-gray-700" }, [
+                            _c("p", [_vm._v(_vm._s(_vm.body) + " ")])
+                          ])
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ]
+            )
+          ]
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.toggleModal
+      ? _c("div", { staticClass: "fixed inset-0 z-40 bg-black opacity-25" })
+      : _vm._e()
   ])
 }
 var staticRenderFns = []
@@ -7343,7 +7465,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "flex flex-col md:flex-row relative overflow-hidden" },
+    {
+      staticClass: "relative flex flex-col overflow-hidden md:flex-row",
+      attrs: { dir: "rtl" }
+    },
     [
       _c("base-sidebar"),
       _vm._v(" "),
@@ -7352,7 +7477,7 @@ var render = function() {
           "nav",
           {
             staticClass:
-              "hidden md:flex justify-between items-center bg-white p-4 shadow-md h-16"
+              "items-center justify-between hidden h-16 p-4 bg-white shadow-md md:flex"
           },
           [
             _vm._m(0),
@@ -7885,7 +8010,7 @@ var render = function() {
               _c(
                 "span",
                 { staticClass: "mx-2 text-xl font-semibold text-gray-300" },
-                [_vm._v("Dashboard")]
+                [_vm._v("لوحه التحكم")]
               )
             ]
           ),
@@ -7974,7 +8099,7 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("span", { staticClass: "mx-2 text-gray-300" }, [
-                      _vm._v("Dashboard")
+                      _vm._v("لوحه التحكم")
                     ])
                   ]
                 )
@@ -8020,7 +8145,7 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("span", { staticClass: "mx-2 text-gray-300" }, [
-                      _vm._v("Users")
+                      _vm._v("المستخدمين")
                     ])
                   ]
                 )
@@ -8066,7 +8191,7 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("span", { staticClass: "mx-2 text-gray-300" }, [
-                      _vm._v("Products")
+                      _vm._v("المنتجات")
                     ])
                   ]
                 )
@@ -8112,7 +8237,7 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("span", { staticClass: "mx-2 text-gray-300" }, [
-                      _vm._v("Reports")
+                      _vm._v("الشكاوي")
                     ])
                   ]
                 )
@@ -8126,8 +8251,6 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("ul", { staticClass: "mt-6 md:hidden" }, [
-            _vm._m(0),
-            _vm._v(" "),
             _c(
               "li",
               { staticClass: "px-2 py-3 mt-2 rounded hover:bg-gray-900" },
@@ -8138,7 +8261,7 @@ var render = function() {
                     staticClass: "mx-2 text-gray-300",
                     on: { click: _vm.logout }
                   },
-                  [_vm._v("Logout")]
+                  [_vm._v("تسجيل خروج")]
                 )
               ]
             )
@@ -8148,22 +8271,7 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "li",
-      { staticClass: "px-2 py-3 mt-2 rounded hover:bg-gray-900" },
-      [
-        _c("a", { staticClass: "mx-2 text-gray-300", attrs: { href: "#" } }, [
-          _vm._v("Account Settings")
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

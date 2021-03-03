@@ -3,11 +3,11 @@
 
         <div class="mt-8">
             <div class="flex justify-between">
-                <h2 class="text-3xl font-bold text-gray-700">Products</h2>
+                <h2 class="text-3xl font-bold text-gray-700">المنتجات</h2>
                 <div>
                     <inertia-link href="/dashboard/products/create"
                                   class="px-4 py-2 font-medium text-white bg-indigo-500 rounded hover:bg-indigo-600">
-                        Create product
+                        اضافه منتج
                     </inertia-link>
                 </div>
             </div>
@@ -21,19 +21,19 @@
                                 <tr>
                                     <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-right text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Name
+                                        الاسم
                                     </th>
                                     <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Price
+                                        السعر
                                     </th>
                                     <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Size
+                                        الحجم
                                     </th>
                                     <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                                         style="text-align: start">
-                                        Action
+                                        الحدث
                                     </th>
                                 </tr>
                                 </thead>
