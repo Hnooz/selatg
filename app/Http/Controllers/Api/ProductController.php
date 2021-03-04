@@ -20,8 +20,6 @@ class ProductController extends Controller
         return response()->json([
             'data' => $products,
             'status' => 200,
-            'error' => false,
-            'message' => ''
         ]);
     }
 
@@ -30,8 +28,6 @@ class ProductController extends Controller
         return response()->json([
             'data' => $product,
             'status' => 200,
-            'error' => false,
-            'message' => ''
         ]);
     }
 }

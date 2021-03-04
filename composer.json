@@ -14,8 +14,9 @@
         "guzzlehttp/guzzle": "^6.3",
         "inertiajs/inertia-laravel": "^0.2.5",
         "laravel/framework": "^7.0",
-        "laravel/ui": "^2.4",
+        "laravel/sanctum": "^2.9",
         "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.4",
         "tightenco/ziggy": "^0.9.4"
     },
     "require-dev": {
