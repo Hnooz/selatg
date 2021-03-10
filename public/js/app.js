@@ -2903,6 +2903,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -3206,10 +3208,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -6095,9 +6093,9 @@ var render = function() {
       { staticClass: "mt-8" },
       [
         _c("div", { staticClass: "flex" }, [
-          _c("h2", { staticClass: "text-3xl font-bold text-indigo-500" }, [
+          _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
             _vm._v("المنتجات /"),
-            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" اضافه")])
+            _c("span", { staticClass: "text-green-500" }, [_vm._v(" اضافه")])
           ])
         ]),
         _vm._v(" "),
@@ -6191,9 +6189,11 @@ var render = function() {
                 "div",
                 { staticClass: "flex justify-end mt-4" },
                 [
-                  _c("base-button", { attrs: { primary: "" } }, [
-                    _vm._v("اضافه")
-                  ])
+                  _c(
+                    "base-button",
+                    { staticClass: "bg-green-600 hover:bg-green-500" },
+                    [_vm._v("اضافه")]
+                  )
                 ],
                 1
               )
@@ -6233,9 +6233,9 @@ var render = function() {
       { staticClass: "mt-8" },
       [
         _c("div", { staticClass: "flex" }, [
-          _c("h2", { staticClass: "text-3xl font-bold text-indigo-500" }, [
+          _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
             _vm._v("المنتجات /"),
-            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" تعديل")])
+            _c("span", { staticClass: "text-green-500" }, [_vm._v(" تعديل")])
           ])
         ]),
         _vm._v(" "),
@@ -6329,9 +6329,11 @@ var render = function() {
                 "div",
                 { staticClass: "flex justify-end mt-4" },
                 [
-                  _c("base-button", { attrs: { primary: "" } }, [
-                    _vm._v("تعديل")
-                  ])
+                  _c(
+                    "base-button",
+                    { staticClass: "bg-green-600 hover:bg-green-500" },
+                    [_vm._v("تعديل")]
+                  )
                 ],
                 1
               )
@@ -6368,7 +6370,7 @@ var render = function() {
   return _c("layout", [
     _c("div", { staticClass: "mt-8" }, [
       _c("div", { staticClass: "flex justify-between" }, [
-        _c("h2", { staticClass: "text-3xl font-bold text-gray-700" }, [
+        _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
           _vm._v("المنتجات")
         ]),
         _vm._v(" "),
@@ -6379,7 +6381,7 @@ var render = function() {
               "inertia-link",
               {
                 staticClass:
-                  "px-4 py-2 font-medium text-white bg-indigo-500 rounded hover:bg-indigo-600",
+                  "px-4 py-2 font-medium text-white bg-green-600 rounded hover:bg-green-500",
                 attrs: { href: "/dashboard/products/create" }
               },
               [_vm._v("\n                    اضافه منتج\n                ")]
@@ -6465,7 +6467,7 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "tbody",
-                      { staticClass: "text-gray-700 bg-white" },
+                      { staticClass: "text-gray-600 bg-white" },
                       _vm._l(_vm.products, function(product) {
                         return _c("tr", { key: product.index }, [
                           _c(
@@ -6646,7 +6648,7 @@ var render = function() {
   return _c("layout", [
     _c("div", { staticClass: "mt-8" }, [
       _c("div", { staticClass: "flex" }, [
-        _c("h2", { staticClass: "text-3xl font-bold text-gray-700" }, [
+        _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
           _vm._v("الشكاوي")
         ]),
         _vm._v(" "),
@@ -7192,13 +7194,13 @@ var render = function() {
       { staticClass: "mt-8" },
       [
         _c("div", { staticClass: "flex" }, [
-          _c("h2", { staticClass: "text-3xl text-indigo-500 font-bold" }, [
-            _vm._v("Users /"),
-            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" Create")])
+          _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
+            _vm._v("المستخدمين /"),
+            _c("span", { staticClass: "text-green-500" }, [_vm._v(" اضافه")])
           ])
         ]),
         _vm._v(" "),
-        _c("base-panel", { staticClass: "md:max-w-3xl mt-4" }, [
+        _c("base-panel", { staticClass: "mt-4 md:max-w-3xl" }, [
           _c(
             "form",
             {
@@ -7212,14 +7214,14 @@ var render = function() {
             [
               _c(
                 "div",
-                { staticClass: "grid grid-cols-1 sm:grid-cols-2 gap-6" },
+                { staticClass: "grid grid-cols-1 gap-6 sm:grid-cols-2" },
                 [
                   _c(
                     "div",
                     [
                       _c("base-input", {
                         attrs: {
-                          label: "Name",
+                          label: "الاسم",
                           name: "name",
                           error: _vm.$page.errors.name,
                           required: ""
@@ -7242,7 +7244,7 @@ var render = function() {
                       _c("base-input", {
                         attrs: {
                           type: "email",
-                          label: "Email address",
+                          label: "عنوان البريد",
                           name: "email",
                           error: _vm.$page.errors.email,
                           required: ""
@@ -7264,7 +7266,7 @@ var render = function() {
                     [
                       _c("base-input", {
                         attrs: {
-                          label: "Password",
+                          label: "كلمه السر",
                           type: "password",
                           error: _vm.$page.errors.password,
                           required: ""
@@ -7283,7 +7285,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("base-input", {
                     attrs: {
-                      label: "Password confirmation",
+                      label: "تاكيد كلمه السر",
                       type: "password",
                       required: ""
                     },
@@ -7303,9 +7305,11 @@ var render = function() {
                 "div",
                 { staticClass: "flex justify-end mt-4" },
                 [
-                  _c("base-button", { attrs: { primary: "" } }, [
-                    _vm._v("Create user")
-                  ])
+                  _c(
+                    "base-button",
+                    { staticClass: "bg-green-600 hover:bg-green-400" },
+                    [_vm._v("اضافه مستخدم")]
+                  )
                 ],
                 1
               )
@@ -7345,13 +7349,13 @@ var render = function() {
       { staticClass: "mt-8" },
       [
         _c("div", { staticClass: "flex" }, [
-          _c("h2", { staticClass: "text-3xl text-indigo-500 font-bold" }, [
-            _vm._v("Users /"),
-            _c("span", { staticClass: "text-gray-700" }, [_vm._v(" Edit")])
+          _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
+            _vm._v("المستخدمين /"),
+            _c("span", { staticClass: "text-green-500" }, [_vm._v("تعديل")])
           ])
         ]),
         _vm._v(" "),
-        _c("base-panel", { staticClass: "md:max-w-3xl mt-4" }, [
+        _c("base-panel", { staticClass: "mt-4 md:max-w-3xl" }, [
           _c(
             "form",
             {
@@ -7365,11 +7369,11 @@ var render = function() {
             [
               _c(
                 "div",
-                { staticClass: "grid grid-cols-1 sm:grid-cols-2 gap-6" },
+                { staticClass: "grid grid-cols-1 gap-6 sm:grid-cols-2" },
                 [
                   _c("base-input", {
                     attrs: {
-                      label: "Name",
+                      label: "الاسم",
                       name: "name",
                       error: _vm.$page.errors.name,
                       required: ""
@@ -7386,7 +7390,7 @@ var render = function() {
                   _c("base-input", {
                     attrs: {
                       type: "email",
-                      label: "Email address",
+                      label: "عنوان البريد",
                       name: "email",
                       error: _vm.$page.errors.email,
                       required: ""
@@ -7402,7 +7406,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("base-input", {
                     attrs: {
-                      label: "Password",
+                      label: "كلمه السر",
                       type: "password",
                       error: _vm.$page.errors.password
                     },
@@ -7416,7 +7420,7 @@ var render = function() {
                   }),
                   _vm._v(" "),
                   _c("base-input", {
-                    attrs: { label: "Password confirmation", type: "password" },
+                    attrs: { label: "تاكيد كلمه السر", type: "password" },
                     model: {
                       value: _vm.form.password_confirmation,
                       callback: function($$v) {
@@ -7433,9 +7437,11 @@ var render = function() {
                 "div",
                 { staticClass: "flex justify-end mt-4" },
                 [
-                  _c("base-button", { attrs: { primary: "" } }, [
-                    _vm._v("Update user")
-                  ])
+                  _c(
+                    "base-button",
+                    { staticClass: "bg-green-600 hover:bg-green-500" },
+                    [_vm._v("تعديل")]
+                  )
                 ],
                 1
               )
@@ -7472,7 +7478,7 @@ var render = function() {
   return _c("layout", [
     _c("div", { staticClass: "mt-8" }, [
       _c("div", { staticClass: "flex justify-between" }, [
-        _c("h2", { staticClass: "text-3xl font-bold text-gray-700" }, [
+        _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
           _vm._v("المستخدمين")
         ]),
         _vm._v(" "),
@@ -7483,7 +7489,7 @@ var render = function() {
               "inertia-link",
               {
                 staticClass:
-                  "px-4 py-2 font-medium text-white bg-indigo-500 rounded hover:bg-indigo-600",
+                  "px-4 py-2 font-medium text-white bg-green-600 rounded hover:bg-green-500",
                 attrs: { href: "/dashboard/users/create" }
               },
               [_vm._v("\n                    اضافه مستخدم\n                ")]
@@ -7596,7 +7602,39 @@ var render = function() {
                                       "/dashboard/users/" + user.id + "/edit"
                                   }
                                 },
-                                [_vm._v("تعديل")]
+                                [
+                                  _c(
+                                    "svg",
+                                    {
+                                      staticClass: "w-6 h-6",
+                                      attrs: {
+                                        fill: "none",
+                                        stroke: "currentColor",
+                                        viewBox: "0 0 24 24",
+                                        xmlns: "http://www.w3.org/2000/svg"
+                                      }
+                                    },
+                                    [
+                                      _c("path", {
+                                        attrs: {
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                          "stroke-width": "2",
+                                          d:
+                                            "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                                        }
+                                      }),
+                                      _c("path", {
+                                        attrs: {
+                                          "stroke-linecap": "round",
+                                          "stroke-linejoin": "round",
+                                          "stroke-width": "2",
+                                          d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                        }
+                                      })
+                                    ]
+                                  )
+                                ]
                               )
                             ],
                             1
@@ -8148,39 +8186,18 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "aside",
-    { staticClass: "w-full bg-gray-800 md:w-64 md:min-h-screen" },
+    { staticClass: "w-full bg-green-700 md:w-64 md:min-h-screen" },
     [
       _c(
         "div",
         {
-          staticClass: "flex items-center justify-between h-16 p-4 bg-gray-900"
+          staticClass: "flex items-center justify-between h-16 p-4 bg-green-800"
         },
         [
           _c(
             "inertia-link",
             { staticClass: "flex items-center", attrs: { href: "/dashboard" } },
             [
-              _c(
-                "svg",
-                {
-                  staticClass: "w-6",
-                  attrs: {
-                    viewBox: "0 0 33 33",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M32.6883 0.335913C32.3407 -0.0248702 31.7929 -0.104067 31.3596 0.142322L19.2249 6.96861L20.3117 1.53926C20.4063 1.06188 20.1797 0.582302 19.7529 0.353512C19.3261 0.126923 18.7981 0.199519 18.455 0.544904L2.96986 16.03C2.94127 16.052 2.91487 16.0762 2.89067 16.1026C1.02735 17.9945 0 20.4804 0 23.1005C0 28.5584 4.4416 33 9.89955 33C12.5218 33 15.0077 31.9727 16.8974 30.1115C16.926 30.0829 16.9502 30.0543 16.9766 30.0235L30.1232 16.8792C30.4532 16.5492 30.539 16.0454 30.3366 15.6252C30.1364 15.205 29.6876 14.9674 29.2235 15.0092L24.4409 15.5394L32.8379 1.67125C33.0975 1.24227 33.0381 0.694497 32.6883 0.335913ZM9.89955 29.7002C6.25431 29.7002 3.29985 26.7457 3.29985 23.1005C3.29985 19.4552 6.25431 16.5008 9.89955 16.5008C13.5448 16.5008 16.4992 19.4552 16.4992 23.1005C16.4992 26.7457 13.5448 29.7002 9.89955 29.7002Z",
-                      fill: "#667EEA"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
               _c(
                 "span",
                 { staticClass: "mx-2 text-xl font-semibold text-gray-300" },
@@ -8236,9 +8253,9 @@ var render = function() {
             _c(
               "li",
               {
-                staticClass: "px-2 py-3 rounded hover:bg-gray-900",
+                staticClass: "px-2 py-3 rounded hover:bg-green-900",
                 class: _vm.route().current("dashboard.index")
-                  ? "bg-gray-900"
+                  ? "bg-green-900"
                   : ""
               },
               [
@@ -8284,8 +8301,8 @@ var render = function() {
             _c(
               "li",
               {
-                staticClass: "px-2 py-3 mt-2 rounded hover:bg-gray-900",
-                class: _vm.route().current("users.*") ? "bg-gray-900" : ""
+                staticClass: "px-2 py-3 mt-2 rounded hover:bg-green-900",
+                class: _vm.route().current("users.*") ? "bg-green-900" : ""
               },
               [
                 _c(
@@ -8330,8 +8347,8 @@ var render = function() {
             _c(
               "li",
               {
-                staticClass: "px-2 py-3 mt-2 rounded hover:bg-gray-900",
-                class: _vm.route().current("products.*") ? "bg-gray-900" : ""
+                staticClass: "px-2 py-3 mt-2 rounded hover:bg-green-900",
+                class: _vm.route().current("products.*") ? "bg-green-900" : ""
               },
               [
                 _c(
@@ -8376,8 +8393,8 @@ var render = function() {
             _c(
               "li",
               {
-                staticClass: "px-2 py-3 mt-2 rounded hover:bg-gray-900",
-                class: _vm.route().current("reports.*") ? "bg-gray-900" : ""
+                staticClass: "px-2 py-3 mt-2 rounded hover:bg-green-900",
+                class: _vm.route().current("reports.*") ? "bg-green-900" : ""
               },
               [
                 _c(
@@ -21902,8 +21919,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/hnooz/Documents/Projects/laravel/template/selatg/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/hnooz/Documents/Projects/laravel/template/selatg/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /home/hnooz/Documents/Projects/laravel/Under devolopment/selatg/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/hnooz/Documents/Projects/laravel/Under devolopment/selatg/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

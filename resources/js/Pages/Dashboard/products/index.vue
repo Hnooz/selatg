@@ -3,10 +3,10 @@
 
         <div class="mt-8">
             <div class="flex justify-between">
-                <h2 class="text-3xl font-bold text-gray-700">المنتجات</h2>
+                <h2 class="text-3xl font-bold text-green-600">المنتجات</h2>
                 <div>
                     <inertia-link href="/dashboard/products/create"
-                                  class="px-4 py-2 font-medium text-white bg-indigo-500 rounded hover:bg-indigo-600">
+                                  class="px-4 py-2 font-medium text-white bg-green-600 rounded hover:bg-green-500">
                         اضافه منتج
                     </inertia-link>
                 </div>
@@ -37,7 +37,7 @@
                                     </th>
                                 </tr>
                                 </thead>
-                                <tbody class="text-gray-700 bg-white">
+                                <tbody class="text-gray-600 bg-white">
                                 <tr v-for="product in products" :key="product.index">
                                     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                                         {{ product.name }}

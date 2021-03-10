@@ -53,7 +53,7 @@ class UserAuthController extends Controller
 
         return response()->json([
             'data' => $user,
-           'status' => '200'
+            'status' => '200'
         ]);
         
     }

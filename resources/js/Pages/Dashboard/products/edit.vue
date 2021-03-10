@@ -3,7 +3,7 @@
 
         <div class="mt-8">
             <div class="flex">
-                <h2 class="text-3xl font-bold text-indigo-500">المنتجات /<span class="text-gray-700"> تعديل</span></h2>
+                <h2 class="text-3xl font-bold text-green-600">المنتجات /<span class="text-green-500"> تعديل</span></h2>
             </div>
 
             <base-panel class="mt-4 md:max-w-3xl">
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="flex justify-end mt-4">
-                        <base-button primary>تعديل</base-button>
+                        <base-button class="bg-green-600 hover:bg-green-500">تعديل</base-button>
                     </div>
                 </form>
             </base-panel>

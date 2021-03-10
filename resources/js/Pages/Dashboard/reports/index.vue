@@ -3,7 +3,7 @@
 
         <div class="mt-8">
             <div class="flex">
-                <h2 class="text-3xl font-bold text-gray-700">الشكاوي</h2>
+                <h2 class="text-3xl font-bold text-green-600">الشكاوي</h2>
                  <div class="flex items-center text-xs text-gray-500 capitalize whitespace-no-wrap md:mx-10 md:text-base">
                         <div class="flex items-center mx-8">
                             <label for="">

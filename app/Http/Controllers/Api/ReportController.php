@@ -16,8 +16,6 @@ class ReportController extends Controller
         return response()->json([
             'data' => $reports,
             'status' => 200,
-            'error' => false,
-            'message' => ''
         ]);
     }
 
@@ -29,9 +27,7 @@ class ReportController extends Controller
 
         return response()->json([
             'data' => $report,
-            'status' => 201,
-            'error' => false,
-            'message' => ''
+            'status' => 200,
         ]);
     }
 }
