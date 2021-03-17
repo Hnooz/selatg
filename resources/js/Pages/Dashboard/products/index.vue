@@ -3,7 +3,7 @@
 
         <div class="mt-8">
             <div class="flex justify-between">
-                <h2 class="text-3xl font-bold text-green-600">المنتجات</h2>
+                <h2 class="text-3xl font-bold text-green-600">السلع</h2>
                 <div>
                     <inertia-link href="/dashboard/products/create"
                                   class="px-4 py-2 font-medium text-white bg-green-600 rounded hover:bg-green-500">
