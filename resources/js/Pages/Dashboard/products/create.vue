@@ -3,14 +3,14 @@
 
         <div class="mt-8">
             <div class="flex">
-                <h2 class="text-3xl font-bold text-green-600">المنتجات /<span class="text-green-500"> اضافه</span></h2>
+                <h2 class="text-3xl font-bold text-green-600">السلع /<span class="text-green-500"> اضافه</span></h2>
             </div>
 
             <base-panel class="mt-4 md:max-w-3xl">
                 <form @submit.prevent="submit">
                     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
                         <div>
-                            <base-input label="اسم المنتج" name="name" v-model="form.name" :error="$page.errors.name" required></base-input>
+                            <base-input label="اسم السلعه" name="name" v-model="form.name" :error="$page.errors.name" required></base-input>
                         </div>
                         <div>
                             <base-input label="السعر" type="number" name="price" v-model="form.price" :error="$page.errors.price" required></base-input>
