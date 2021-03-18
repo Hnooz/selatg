@@ -36,7 +36,7 @@
                                 <div class="flex flex-wrap">
                                     <div class="relative flex-1 flex-grow w-full max-w-full pr-4">
                                         <h5 class="text-xs font-bold text-gray-500 uppercase">
-                                            المنتجات
+                                            السلع
                                         </h5>
                                         <span class="text-xl font-semibold text-gray-800">
                                             {{productCount}}

@@ -42,7 +42,7 @@
                 <li class="px-2 py-3 mt-2 rounded hover:bg-green-900" :class="route().current('products.*')? 'bg-green-900' : ''">
                     <inertia-link href="/dashboard/products" class="flex items-center">
                         <svg class="w-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-                        <span class="mx-2 text-gray-300">المنتجات</span>
+                        <span class="mx-2 text-gray-300">السلع</span>
                     </inertia-link>
                 </li>
                 <li class="px-2 py-3 mt-2 rounded hover:bg-green-900" :class="route().current('reports.*')? 'bg-green-900' : ''">
