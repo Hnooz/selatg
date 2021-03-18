@@ -5091,7 +5091,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                        المنتجات\n                                    "
+                              "\n                                        السلع\n                                    "
                             )
                           ]
                         ),
@@ -6094,7 +6094,7 @@ var render = function() {
       [
         _c("div", { staticClass: "flex" }, [
           _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
-            _vm._v("المنتجات /"),
+            _vm._v("السلع /"),
             _c("span", { staticClass: "text-green-500" }, [_vm._v(" اضافه")])
           ])
         ]),
@@ -6120,7 +6120,7 @@ var render = function() {
                     [
                       _c("base-input", {
                         attrs: {
-                          label: "اسم المنتج",
+                          label: "اسم السلعه",
                           name: "name",
                           error: _vm.$page.errors.name,
                           required: ""
@@ -6234,7 +6234,7 @@ var render = function() {
       [
         _c("div", { staticClass: "flex" }, [
           _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
-            _vm._v("المنتجات /"),
+            _vm._v("السلع /"),
             _c("span", { staticClass: "text-green-500" }, [_vm._v(" تعديل")])
           ])
         ]),
@@ -6260,7 +6260,7 @@ var render = function() {
                     [
                       _c("base-input", {
                         attrs: {
-                          label: "اسم المنتج",
+                          label: "اسم السلعه",
                           name: "name",
                           error: _vm.$page.errors.name,
                           required: ""
@@ -6371,7 +6371,7 @@ var render = function() {
     _c("div", { staticClass: "mt-8" }, [
       _c("div", { staticClass: "flex justify-between" }, [
         _c("h2", { staticClass: "text-3xl font-bold text-green-600" }, [
-          _vm._v("المنتجات")
+          _vm._v("السلع")
         ]),
         _vm._v(" "),
         _c(
@@ -6384,7 +6384,7 @@ var render = function() {
                   "px-4 py-2 font-medium text-white bg-green-600 rounded hover:bg-green-500",
                 attrs: { href: "/dashboard/products/create" }
               },
-              [_vm._v("\n                    اضافه منتج\n                ")]
+              [_vm._v("\n                    اضافه سلعة\n                ")]
             )
           ],
           1
@@ -8382,7 +8382,7 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("span", { staticClass: "mx-2 text-gray-300" }, [
-                      _vm._v("المنتجات")
+                      _vm._v("السلع")
                     ])
                   ]
                 )
